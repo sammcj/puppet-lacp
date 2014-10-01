@@ -7,8 +7,8 @@ Designed to work with HP / Intel 10GbE NICs (ixgbe driver) but can easily be mod
 
 ## Requirements:
 
-Augeas
-A Debian based distro
+* Augeas
+* A Debian based distro
 
 ## Example:
 
