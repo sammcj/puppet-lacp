@@ -4,6 +4,12 @@ puppet-lacp
 Puppet module to setup a LACP bond on Debian
 Designed to work with HP / Intel 10GbE NICs (ixgbe driver) but can easily be modified to work with others.
 
+
+## Requirements:
+
+Augeas
+A Debian based distro
+
 ## Example:
 
 ```
