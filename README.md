@@ -14,10 +14,11 @@ Designed to work with HP / Intel 10GbE NICs (ixgbe driver) but can easily be mod
 
 ```
   class { 'lacp':
-    address       => '10.51.11.143',
-    netmask       => '255.255.254.0',
-    gateway       => '10.51.11.1',
-    nameservers   => '10.51.11.10',
-    searchdomains => 'mycompany.com',
+    devices       => [ 'ixgbe0', 'ixgbe1' ],
+    address       => '192.168.0.2',
+    netmask       => '255.255.255.0',
+    gateway       => '192.168.0.1',
+    searchdomains => 'my.company.local your.company.com',
+    nameservers   => '192.168.0.10 192.168.1.10',
   }
 ```
